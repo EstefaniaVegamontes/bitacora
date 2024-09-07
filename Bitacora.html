@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora</title>
+    <link rel="stylesheet" href="Diseño.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Diseño Web HTML 5 Y CSS 3 Adaptativo</h1>
+        <h2>Bitacora 1</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#conceptos-basicos">JavaScript Conceptos Básicos</a></li>
+            <li><a href="#dom">DOM</a></li>
+            <li><a href="#referenciar-js">Referenciar con JS</a></li>
+            <li><a href="#propiedad-style">Propiedad Style</a></li>
+            <li><a href="#classlist">Classlist</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#if-else">If Else</a></li>
+            <li><a href="#viewport">Viewport</a></li>
+            <li><a href="#medias">@ Medias</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container-1">
+            <div class="box"></div>
+        </div>
+        <div class="container-2">
+            <div class="box">
+                <h1>Bitacora 1</h1>
+                <h3 id="conceptos-basicos">JavaScript Conceptos Básicos</h3>
+                <p>1. Variables
+                    Las variables en JavaScript se utilizan para almacenar datos. Puedes declararlas usando var, let o
+                    const:
+
+                    var: Es la forma más antigua de declarar variables. Tiene un alcance de función, lo que significa
+                    que está disponible en todo el bloque de función en el que se declara.
+                    let: Introducido en ES6, let tiene un alcance de bloque, lo que significa que solo está disponible
+                    dentro del bloque donde se declara.
+                    const: Similar a let, pero una vez asignado un valor, no puede ser reasignado.</p>
+                <p>2. Tipos de Datos
+                    JavaScript maneja varios tipos de datos, entre los más comunes están:
+
+                    Números (number): Incluyen enteros y decimales.
+                    Cadenas de texto (string): Textos encerrados en comillas simples o dobles.
+                    Booleanos (boolean): Representan valores de verdad (true o false).
+                    Arreglos (array): Colección ordenada de elementos.
+                    Objetos (object): Estructuras de datos que permiten almacenar pares clave-valor.</p>
+                <p>3. Operadores
+                    Los operadores permiten realizar operaciones con valores. Algunos ejemplos son:
+
+                    Aritméticos: +, -, *, /, % (suma, resta, multiplicación, división, módulo).
+                    De asignación: =, +=, -=, *=, /= (asignar y operar en el mismo paso).
+                    De comparación: ==, ===, !=, !==, >, <,>=, <= (comparan valores). Lógicos: &&, ||, ! (y lógico, o
+                            lógico, negación).</p>
+                            <p>4. Condicionales
+                                Los condicionales permiten ejecutar diferentes bloques de código según si una condición
+                                es verdadera o falsa. Los más comunes son if, else if, y else.</p>
+            </div>
+            <div class="box2">
+                <h3 id="dom">DOM</h3>
+                <p>El DOM (Document Object Model) es un concepto clave en el desarrollo web, ya que permite
+                    la manipulación
+                    dinámica de documentos HTML y XML mediante lenguajes de programación como JavaScript.
+                    El DOM convierte la estructura de un documento en un modelo o representación en forma de
+                    árbol, donde cada elemento
+                    del documento (como etiquetas HTML, atributos, textos, etc.) se convierte en un nodo que
+                    puede ser accedido y manipulado.</p>
+                <p>Tipos de Nodos en el DOM
+                    Element Nodes: Representan las etiquetas HTML. Por ejemplo, h1, p, etc.
+                    Text Nodes: Contienen el texto dentro de un elemento. Por ejemplo, el contenido de un h1
+                    es un nodo de texto.
+                    Attribute Nodes: Representan los atributos de las etiquetas HTML. Aunque no son nodos
+                    hijos, puedes acceder a ellos mediante los nodos de elementos.
+                    Document Node: Representa el documento completo, el cual es la raíz del árbol DOM.</p>
+            </div>
+            <div class="box">
+                <h3 id="referenciar-js">Referenciar con JS</h3>
+                <p>Referenciar elementos con JavaScript se refiere al proceso de acceder y manipular los
+                    elementos de una página web a través del DOM
+                    (Document Object Model). Esto es fundamental para poder modificar dinámicamente el
+                    contenido, estilos y comportamiento de una página web.</p>
+                <p>Cómo Referenciar Elementos en el DOM
+                    Para referenciar un elemento en el DOM, puedes utilizar varios métodos que te permiten
+                    seleccionar un elemento específico o un grupo de elementos. Una vez referenciados,
+                    puedes manipularlos directamente usando JavaScript.</p>
+
+                <p> 1. getElementById(id)
+                    Este método selecciona un elemento por su atributo id. Es útil cuando sabes que el
+                    elemento tiene un identificador único.</p>
+                <p>2. getElementsByClassName(class)
+                    Este método selecciona todos los elementos que tienen una clase específica. Devuelve una
+                    colección de elementos, por lo que necesitarás iterar sobre ellos si deseas manipular
+                    varios elementos a la vez.</p>
+                <p>3. getElementsByTagName(tag)
+                    Este método selecciona todos los elementos que tienen una etiqueta específica, como div,
+                    p, h1, etc. También devuelve una colección de elementos.</p>
+            </div>
+            <div class="box2">
+                <h3 id="propiedad-style">Propiedad Style</h3>
+                <p>La propiedad style en JavaScript se utiliza para acceder y modificar los estilos CSS de
+                    un elemento HTML directamente desde el script.
+                    Esta propiedad es especialmente útil cuando deseas aplicar estilos dinámicamente o
+                    cambiar la apariencia de un elemento en respuesta a
+                    acciones del usuario.</p>
+                <p>La propiedad style te permite acceder a los estilos en línea de un elemento, es decir,
+                    los estilos que se aplican directamente al
+                    atributo style del HTML. No te permite acceder a los estilos definidos en hojas de
+                    estilo externas o en bloques style dentro del HTML.</p>
+                <p>Limitaciones de style
+                    Solo afecta los estilos en línea: La propiedad style solo se refiere a los estilos en
+                    línea del elemento, lo que significa que no puedes usarla para acceder a los estilos
+                    definidos en una hoja de estilo externa. Si un estilo se define en un archivo CSS
+                    externo y no está presente en el atributo style del elemento, no podrás acceder a él
+                    usando style.
+
+                    No reemplaza las clases: Aunque style es útil para cambios específicos, si necesitas
+                    aplicar muchos estilos a la vez, es mejor usar clases CSS y cambiarlas dinámicamente con
+                    classList.</p>
+            </div>
+            <div class="box">
+                <h3 id="classlist">Classlist</h3>
+                <p>La propiedad classList en JavaScript es una forma conveniente de trabajar con las clases
+                    CSS de un elemento.
+                    Te permite añadir, quitar, alternar y verificar las clases de un elemento sin necesidad
+                    de manipular directamente el atributo class.
+                    Esto es útil para aplicar estilos y comportamientos dinámicos en una página web.</p>
+                <p>1. add()
+                    Este método añade una o más clases a un elemento. Si la clase ya está presente, no la
+                    añade de nuevo.</p>
+                <p>2. remove()
+                    Este método elimina una o más clases de un elemento. Si la clase no está presente, no
+                    hace nada.</p>
+                <p>3. toggle()
+                    Este método alterna una clase en un elemento. Si la clase está presente, la elimina; si
+                    no está presente, la añade.</p>
+                <p>4. contains()
+                    Este método verifica si un elemento tiene una clase específica. Devuelve true si la
+                    clase está presente y false si no lo está.</p>
+            </div>
+            <div class="box2">
+                <h3 id="eventos">Eventos</h3>
+                <p>En JavaScript, los eventos son acciones que ocurren en la página web y a las que puedes responder
+                    usando código.
+                    Los eventos permiten que las páginas web sean interactivas, reaccionando a las acciones del usuario
+                    como hacer clic en un botón,
+                    mover el ratón, escribir en un campo de texto, y más.</p>
+                <p>Eventos de Mouse:</p>
+                <li>click: Ocurre cuando el usuario hace clic en un elemento.</li>
+                <li>dblclick: Ocurre cuando el usuario hace doble clic en un elemento.</li>
+                <li>mouseover: Ocurre cuando el usuario mueve el ratón sobre un elemento.</li>
+                <p>Eventos de Formulario:</p>
+                <li>submit: Ocurre cuando se envía un formulario.</li>
+                <li>change: Ocurre cuando el valor de un elemento de formulario cambia (como un input o select).</li>
+                <li>focus: Ocurre cuando un elemento recibe el enfoque (por ejemplo, cuando el usuario hace clic en un
+                    campo de texto).</li>
+                <p>Eventos de Teclado:</p>
+                <li>keydown: Ocurre cuando una tecla es presionada.</li>
+                <li>keyup: Ocurre cuando una tecla es soltada.</li>
+                <li>keypress: Ocurre cuando una tecla es presionada y soltada (aunque está siendo reemplazado por
+                    keydown y keyup en muchos casos).</li>
+            </div>
+            <div class="box">
+                <h3 id="if-else">If else</h3>
+                <p>La estructura de control if...else en JavaScript permite tomar decisiones en el código basadas en
+                    condiciones.
+                    Con if...else, puedes ejecutar diferentes bloques de código dependiendo de si una condición es
+                    verdadera o falsa.</p>
+                <p>Condiciones Booleanas</p>
+                <p>Las condiciones en un if pueden ser cualquier expresión booleana, es decir, una expresión que se
+                    evalúe como true o false. Por ejemplo:</p>
+                <p>Comparaciones: a > b, a === b, etc.
+                    Expresiones lógicas: a && b, a || b
+                    Valores directamente: cualquier valor que no sea false, 0, "", null, undefined, o NaN se considera
+                    true.</p>
+            </div>
+            <div class="box2">
+                <h3 id="viewport">Viewport</h3>
+                <p>El viewport es el área visible de una página web en la pantalla de un dispositivo. En términos más
+                    simples,
+                    es la parte de la página que el usuario puede ver sin hacer scroll. El concepto de viewport es
+                    crucial para el diseño web
+                    adaptable (responsive design), ya que permite que las páginas web se ajusten correctamente a
+                    diferentes tamaños de pantalla,
+                    desde dispositivos móviles hasta pantallas de escritorio.</p>
+                <p>Propiedad viewport en HTML</p>
+                <p>Para controlar cómo se comporta el viewport en dispositivos móviles y ajustar el diseño según el
+                    tamaño de la pantalla,
+                    se utiliza una etiqueta especial en el HTML, llamada meta viewport. Esta etiqueta le indica al
+                    navegador cómo escalar y dimensionar la página.</p>
+                <p>meta name="viewport" content="width=device-width, initial-scale=1.0"
+                </p>
+                <p>width=device-width: Ajusta el ancho del viewport al ancho de la pantalla del dispositivo. Esto
+                    asegura que la página se muestre correctamente en diferentes dispositivos, desde teléfonos móviles
+                    hasta pantallas de escritorio. </p>
+
+                <p>initial-scale=1.0: Establece el nivel de zoom inicial cuando se carga la página. Un valor de 1.0
+                    significa que no habrá zoom, y la página se mostrará al 100% de su tamaño real.</p>
+
+                <p>Importancia del Viewport en Diseño Adaptable</p>
+                <p>El viewport es fundamental para crear diseños adaptables, donde el contenido de la página se ajusta
+                    dinámicamente a diferentes tamaños de pantalla. Sin la etiqueta viewport, las páginas web a menudo
+                    se verían demasiado pequeñas en pantallas móviles, ya que el navegador intentaría mostrar toda la
+                    página web como lo haría en una pantalla de escritorio.</p>
+            </div>
+            <div class="box">
+                <h3 id="medias">@ Medias</h3>
+                <p>Las media queries o consultas de medios (utilizando @media en CSS) son una característica clave del
+                    diseño web adaptable (responsive design). Permiten aplicar estilos CSS específicos dependiendo de
+                    las características del dispositivo o del tamaño de la pantalla del usuario. Esto es esencial para
+                    que tu página web se vea bien y funcione correctamente en una variedad de dispositivos, desde
+                    teléfonos móviles hasta pantallas de escritorio grandes.</p>
+                <p>¿Qué es @media?</p>
+                <p>La regla @media en CSS se utiliza para establecer condiciones que deben cumplirse para que se
+                    apliquen ciertos estilos. Estas condiciones pueden basarse en el ancho o altura de la pantalla, la
+                    resolución del dispositivo, la orientación (horizontal o vertical), y otros aspectos.</p>
+
+                    <p>Tipos de Condiciones Comunes en Media Queries</p>
+                    <p>max-width: Aplica estilos cuando el ancho del viewport es menor o igual a un valor específico. </p>
+                       <p> min-width: Aplica estilos cuando el ancho del viewport es mayor o igual a un valor específico.</p>
+                       <p>max-height: Aplica estilos cuando la altura del viewport es menor o igual a un valor específico.</p>
+                       <p>min-height: Aplica estilos cuando la altura del viewport es mayor o igual a un valor específico.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Estefania Vegamontes. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

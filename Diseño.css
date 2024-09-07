@@ -1,0 +1,123 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f093b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-image: url(computadora.jpg);
+    background-size: cover; /* Asegura que la imagen se ajuste al contenedor */
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Playfair Display', serif;
+    width: 40%; /* Establece el ancho al 50% */
+    margin: 0 auto; /* Centra el header horizontalmente */
+    
+}
+
+
+
+main {
+    padding: 2em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Añade un espacio entre los contenedores */
+    background-color: #bbd8ff;
+}
+
+.container-1 {
+    width: 20%; /* El contenedor 1 ocupa el 20% del ancho */
+    background-image: url(ojo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    height: 800px; /* Asegura una altura fija para el contenedor */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    position: sticky; /* Hace que el contenedor sea "pegajoso" */
+    top: 0; /* Se mantendrá en la parte superior cuando empieces a hacer scroll */
+}
+
+
+.container-2 {
+    width: 80%; /* El contenedor 2 ocupa el 80% del ancho */
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.box{
+background-color: azure;
+padding: 20px;
+margin-bottom: 3%;
+}
+
+.box2{
+    background-color: rgb(253, 255, 197);
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+nav {
+    background-color: #00082e;
+    color: white;
+    padding: 0.5em 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 17px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+  }
+nav li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+
+
+nav a:hover {
+    font-size: 18px;
+  color: #00e5ff;
+}
+
+footer {
+    background-color: #00082e;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
